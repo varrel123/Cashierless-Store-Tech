@@ -2,11 +2,13 @@ import cv2
 from ultralytics import YOLO
 
 # Kalo mau train data run ini di CMD :
-# yolo task=detect mode=train model=yolov8n.pt data=config.yaml epochs=100 imgsz=640 batch=6
+# yolo task=detect mode=train model=yolov8s.pt data=config.yaml epochs=100 imgsz=640 batch=4
 
 # Sesuaikan Weight dengan ini : 
-model = YOLO("yolov8n.pt") # Default
-#model = YOLO("runs/detect/train35/weights/best.pt") 
+
+# model = YOLO("yolov8s.pt") 
+
+model = YOLO("runs/detect/train4/weights/last.pt") 
 
 cap = cv2.VideoCapture(0)  
 
