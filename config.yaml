@@ -1,6 +1,0 @@
-train: ../train_data/images/train/
-val: ../train_data/images/val/
-
-names: 
-  0: aqua_normal
-  1: aqua_rusak
